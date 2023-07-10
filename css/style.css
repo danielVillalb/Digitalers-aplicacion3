@@ -276,6 +276,14 @@ footer span{
     display: none;
 }
 @media (max-width:1008px) {
+    /*cambiamos el tamaño de la fuente*/
+    :root{
+        --span:12px;
+        --titulos:33px;
+        --parrafos:11px;
+        --txtbtn:11px;
+        --txtlink:12px;
+    }
     /*body*/
     body{
         min-width: 400px;
