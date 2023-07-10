@@ -134,6 +134,10 @@ body::before{
     align-items: center;
     justify-content: center;
 }
+.servicio img{
+    width: 100%;
+}
+
 .servicio h1,
 .servicio h2,
 .servicio span,
