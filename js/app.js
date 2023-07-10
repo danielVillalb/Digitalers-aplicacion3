@@ -1,5 +1,7 @@
 let condicion=false;
+    
 $('#menu').addClass('hamburguesa');
+if(window.innerWidth<768){
 $('#menu').on('click',function(){
     condicion=!condicion;
     if(condicion){
@@ -28,7 +30,7 @@ $('#cruz').on('click',function(){
 
 
 
-
+}
 
 
 
