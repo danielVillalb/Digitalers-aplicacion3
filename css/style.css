@@ -263,7 +263,7 @@ footer span{
     align-items: center;
 }
 /*-----------Responsive---------*/
-.hamburguesa{
+.hamburguesa,#menu{
     rotate: 90deg;
 }
 .invertir{

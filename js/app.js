@@ -1,7 +1,8 @@
 let condicion=false;
-    
+
+
+
 $('#menu').addClass('hamburguesa');
-if(window.innerWidth<768){
 $('#menu').on('click',function(){
     condicion=!condicion;
     if(condicion){
@@ -28,9 +29,33 @@ $('#cruz').on('click',function(){
     }
 })
 
+console.log(window.innerWidth)
 
+window.addEventListener('resize', function(){
+    if(window.innerWidth>1000){
+        $('#menu').css('display','none');
+        $('#cruz').css('display','none');
+        $('#barra').css({'top':'0'});
+        $('.papa').css('display','block');
+        $('#menu').css('display','none');
 
+}else{
+    $('.papa').css('display','block');
+    if(condicion){
+
+        
+        
+
+        $('#cruz').css({'display':'block','zIndex':'200','position':'fixed','right':'64px','top':'20'});
+        
+        console.log('entro')
+    }else{
+        console.log('no entro')
+        $('#menu').css('display','block');
+    }
+    
 }
+});
 
 
 
