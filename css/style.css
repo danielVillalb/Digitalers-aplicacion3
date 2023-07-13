@@ -12,19 +12,23 @@ body{
     list-style: none;
 }
 /*-----------Utilidades---------*/
-
+body{
+    background:#000;
+}
 :root{
     --fondoOscuro:#041446;
     --fondoClaro:#eff2ff;
     --fondoFooter:#15163d;
     --txtOscuro:#15163d;
-    --span:24px;
-    --titulos:77px;
-    --parrafos:21px;
-    --txtbtn:21px;
-    --txtlink:24px;
+    --span:18px;
+    --titulos:58px;
+    --titulo2:48px;
+    --parrafos:16px;
+    --txtbtn:16px;
+    --txtlink:16px;
     --fuenteligth:200;
     --fuenteBold:900;
+    --imagenes:598px;
 }
 /*------------Fuentes-------------*/
 
@@ -32,6 +36,9 @@ h1,h2{
     font-weight: var(--fuenteBold);
     font-size: var(--titulos);
     color: var(--txtOscuro);
+}
+.infoContactos{
+    font-size:var(--titulo2)
 }
 p{
     font-weight:var(--fuenteligth);
@@ -53,7 +60,6 @@ button{
 button:hover{
     background-color: white;
     color: var(--fondoOscuro);
-
 }
 
 
@@ -67,7 +73,6 @@ figcaption,a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px;
 }
 
@@ -80,7 +85,6 @@ figcaption,a{
     position: absolute;
 }
 nav{
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,7 +139,12 @@ body::before{
     justify-content: center;
 }
 .servicio img{
-    width: 100%;
+    width: var(--imagenes);
+}
+@media(max-width:678px){
+    .servicio img{
+        width:367px;
+    }
 }
 
 .servicio h1,
@@ -182,12 +191,12 @@ body::before{
     justify-content: center;
 }
 .foto{
-    
     width: 150px;
     height: 150px;
     background-position: center;
     border-radius: 50%;
 }
+
 .foto1{
     background-image:url(../assets/img/AndresGarcia.png);
 }
@@ -205,7 +214,7 @@ body::before{
     align-items: center;
 }
 #contactos img{
-    width: 50%;
+    width: var(--imagenes);
 }
 .infoContactos{
     width: 40%;
@@ -278,11 +287,11 @@ footer span{
 @media (max-width:1008px) {
     /*cambiamos el tamaño de la fuente*/
     :root{
-        --span:12px;
-        --titulos:33px;
-        --parrafos:11px;
-        --txtbtn:11px;
-        --txtlink:12px;
+        --span:16px;
+        --titulos:40px;
+        --parrafos:16px;
+        --txtbtn:16px;
+        --txtlink:16px;
     }
     /*body*/
     body{
