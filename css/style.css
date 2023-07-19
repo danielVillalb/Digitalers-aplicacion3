@@ -12,9 +12,30 @@ body{
     list-style: none;
 }
 /*-----------Utilidades---------*/
-body{
-    background:#000;
+.oscuro{
+    background:rgba(0,0,0,0.5)!important;
+    z-index: -1;
 }
+.oscuro a{
+    color: white;
+}
+.negro{
+    background:#000!important;
+}
+.negro a{
+    color: white;
+}
+.negro button{
+    border:1px solid white
+}
+.claro{
+    background:#fff!important;
+    z-index: -1;
+}
+#claro{
+    display: none;
+}
+
 :root{
     --fondoOscuro:#041446;
     --fondoClaro:#eff2ff;

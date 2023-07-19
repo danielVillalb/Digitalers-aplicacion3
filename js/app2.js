@@ -64,3 +64,36 @@ if(this.window.innerWidth<1000){
     }
 }
 })
+let btnOscuro=$('#oscuro');
+let btnClaro=$('#claro');
+let body=$('body');
+let header=$('header');
+let nav=$('#barra');
+let oscuro=false;
+
+const modoOscuro=()=>{
+    body.addClass('oscuro');
+    body.removeClass('claro');
+    nav.addClass('negro');
+    nav.removeClass('claro');
+    header.addClass('oscuro');
+    header.removeClass('oscuro');
+    btnClaro.css('display','block');
+    btnOscuro.css('display','none');
+    oscuro=true;
+
+}
+const modoClaro=()=>{
+    body.removeClass('oscuro');
+    body.addClass('claro');
+    nav.removeClass('negro');
+    nav.addClass('claro');
+    header.addClass('claro');
+    header.removeClass('claro');
+    btnOscuro.css('display','block');
+    btnClaro.css('display','none');
+    oscuro=false;
+}
+
+
+
